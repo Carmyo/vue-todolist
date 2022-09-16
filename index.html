@@ -31,7 +31,7 @@
                 <li v-for="todo in todos">
 
                     <div :class="{done: todo.done}">{{ todo.text }}</div>
-                    <i @click="deleteTodo(index)" class="fa-solid :class=" todo.done ? 'fa-check' fa-xmark"></i>
+                    <i @click="deleteTodo(index)" class="fa-solid" :class=" todo.done ? fa-check fa-xmark"></i>
                     <span @click="toggleTodo(todo)">{{todo.text}}</span>
                 </li>
             </ul>
